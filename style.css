@@ -1,0 +1,217 @@
+* {
+  @font-face {
+    font-family: Product Sans;
+    src: url(Fonts/Product\Sans\Regular.ttf);
+  }
+  @font-face {
+    font-family: Product Bold;
+    src: url(Fonts/Product\Bold\Regular.ttf);
+  }
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(129deg, rgb(254, 141, 3), rgb(240, 57, 21));
+}
+nav {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  padding: 0vw 10vw;
+  z-index: 99;
+}
+nav a,
+i {
+  font-size: 1vw;
+  text-decoration: none;
+  color: #fff;
+}
+.cntr-nav {
+  display: flex;
+  gap: 3vw;
+}
+nav i {
+  font-size: 1.5vw;
+}
+.one {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.one h1 {
+  font-size: 25vw;
+  font-family: Product sans-serif;
+}
+#fanta {
+  position: absolute;
+  width: 35%;
+  z-index: 2;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+#orange-cut {
+  width: 12%;
+  position: absolute;
+  top: 10%;
+  z-index: 1;
+  left: 35%;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+#orange {
+  position: absolute;
+  width: 20%;
+  z-index: 3;
+  top: 55%;
+  right: 30%;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+#leaf2 {
+  top: 10%;
+  left: 0%;
+  transform: rotate(25deg);
+  width: 14%;
+  position: absolute;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+#leaf {
+  top: 65%;
+  left: 80%;
+  width: 15%;
+  position: absolute;
+  transform: rotate(30deg);
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+#coconut {
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  width: 30%;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.two {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(129deg, rgb(92, 51, 1), rgb(240, 57, 21));
+}
+
+.left-two,
+.right-two {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  gap: 5vh;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.left-two svg {
+  margin-top: 30vh;
+  width: 90%;
+  transform: rotateX(50deg);
+}
+
+.right-two h1 {
+  color: #fff;
+  font-size: 5vw;
+}
+.right-two p {
+  font-size: 1vw;
+  color: #fff;
+  width: 80%;
+}
+.three {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vw;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(129deg, rgb(254, 141, 3), rgb(240, 57, 21));
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 25vw;
+  gap: 2vh;
+  height: 70vh;
+  margin-top: 10vh;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.card h1 {
+  font-size: 3vw;
+  margin-top: 40vh;
+}
+.card button {
+  font-size: 1vw;
+  border-radius: 50px;
+  padding: 1vw 2vw;
+  border: none;
+  color: #fff;
+  font: 600;
+  background-color: rgb(254, 116, 29);
+}
+#cocacola {
+  position: absolute;
+  margin-bottom: 15%;
+  width: 20%;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+#pepsi {
+  position: absolute;
+  margin-bottom: 15%;
+  width: 30%;
+  transition: cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+.lemon{
+  top: 0%;
+  width: 15vw;
+  position: absolute;
+  
+}
+ @media screen and (min-width:1024px) {
+    #main{
+      display: block;
+    }
+ }
+
+ @media screen and (max-width: 1023px) {
+  #main {
+    display: none; /* Mobile pe content ko hide karega */
+  }
+}
